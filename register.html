@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <h1 class="text-2xl font-bold text-left text-gray-800 mb-8">
+        Create an account
+      </h1>
+      <form class="mb-auto" action="login.html">
+        <div class="mb-5">
+          <input
+            required
+            placeholder="First Name"
+            type="text"
+            name="firstname"
+            class="border-gray-300 focus:border-blue-500 focus:ring-blue-500 rounded-md shadow-sm w-full py-2 px-3"
+          />
+        </div>
+        <div class="mb-5">
+          <input
+            required
+            placeholder="Last Name"
+            type="text"
+            name="lastname"
+            class="border-gray-300 focus:border-blue-500 focus:ring-blue-500 rounded-md shadow-sm w-full py-2 px-3"
+          />
+        </div>
+        <div class="mb-5">
+          <input
+            required
+            placeholder="Email"
+            type="email"
+            id="email"
+            name="email"
+            class="border-gray-300 focus:border-blue-500 focus:ring-blue-500 rounded-md shadow-sm w-full py-2 px-3"
+          />
+        </div>
+        <div class="mb-5">
+          <input
+            required
+            placeholder="Password"
+            type="password"
+            id="password"
+            name="password"
+            class="border-gray-300 focus:border-blue-500 focus:ring-blue-500 rounded-md shadow-sm w-full py-2 px-3"
+          />
+        </div>
+        <div class="mb-10">
+          <input
+            required
+            type="checkbox"
+            id="myCheckbox"
+            class="w-4 h-4 mr-2 focus:ring-blue-500 focus:ring-offset-2"
+          />
+          <label for="myCheckbox" class="text-gray-500"
+            >By proceeding, I agree to all
+            <a href="#" class="text-blue-500 underline">T&C</a> and
+            <a href="#" class="text-blue-500 underline"
+              >Privacy Policy</a
+            ></label
+          >
+        </div>
+
+        <button
+          type="submit"
+          class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 w-full"
+        >
+          Create an account
+        </button>
+      </form>
+      <div class="container mx-auto px-4 py-8 flex items-center">
+        <hr class="border-t border-gray-300 flex-grow mr-4" />
+        <p class="text-lg font-bold text-gray-800">Or</p>
+        <hr class="border-t border-gray-300 flex-grow mr-4" />
+      </div>
+
+      <div class="flex flex-row items-center justify-center">
+        <img class="mr-4" src="./assets/google.png" alt="google" />
+        <img class="ml-4" src="./assets/meta.png" alt="meta" />
+      </div>
+
+      <p class="mt-5 text-center">
+        Already have an account?
+        <a href="login.html" class="text-blue-500 underline">Login</a>
+      </p>
+    </div>
+  </body>
+</html>
